@@ -249,4 +249,8 @@ body.home-body {
   .hero-image {
     justify-content: center;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 } 
