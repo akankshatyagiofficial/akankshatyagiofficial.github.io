@@ -6,7 +6,7 @@ permalink: /about/
 
 # About Me
 
-Welcome to my personal website! I'm Akanksha, a passionate data scientist and analyst.
+Welcome to my personal website! I'm Akanksha, a passionate data analyst.
 
 ## Background
 
