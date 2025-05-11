@@ -67,6 +67,7 @@ body.home-body {
   font-family: 'Inter', Arial, sans-serif;
   color: #1a2340;
   margin: 0;
+  padding-top: 90px;
 }
 .container {
   max-width: 1200px;
@@ -74,7 +75,13 @@ body.home-body {
   padding: 0 2rem;
 }
 .main-header {
-  background: none;
+  background: #f8f9fa;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
   padding: 2rem 0 1rem 0;
   display: flex;
   justify-content: center;
@@ -85,6 +92,12 @@ body.home-body {
   align-items: center;
   width: 100%;
   justify-content: space-between;
+}
+.container.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 .logo {
   font-weight: bold;
@@ -97,6 +110,7 @@ body.home-body {
   list-style: none;
   margin: 0;
   padding: 0;
+  justify-content: center;
 }
 .main-nav a {
   color: #1a2340;
@@ -116,10 +130,13 @@ body.home-body {
   border-radius: 50%;
 }
 .social-icons {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
   gap: 1rem;
-  font-family: 'FontAwesome', Arial, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 .hero-section {
   display: flex;
@@ -128,6 +145,7 @@ body.home-body {
   margin-top: 2rem;
   margin-bottom: 4rem;
   gap: 3rem;
+  padding-top: 120px;
 }
 .hero-text {
   flex: 1;
@@ -253,4 +271,59 @@ body.home-body {
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Project hero format */
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+.project-hero {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+  overflow: hidden;
+  padding: 1.5rem;
+  gap: 2rem;
+}
+.project-image img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.10);
+}
+.project-details {
+  flex: 1;
+}
+.project-details h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.project-details p {
+  margin: 0.3rem 0 0.7rem 0;
+  color: #3a4667;
+}
+@media (max-width: 700px) {
+  .project-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .project-image img {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+  }
+}
+
+section[id] {
+  scroll-margin-top: 150px;
 } 
