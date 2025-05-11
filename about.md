@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: About
 permalink: /about/
 ---
@@ -26,4 +26,7 @@ Welcome to my personal website! I'm Akanksha, a passionate data analyst.
 
 ## Contact
 
-Feel free to reach out to me at [your email] or connect with me on [your social media links]. 
+Feel free to reach out to me at [your email] or connect with me on [your social media links].
+
+[← Back to Home](/)
+[View my projects →](/projects/) 

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Projects
 permalink: /projects/
 ---
@@ -48,4 +48,7 @@ Here are some of the projects I've worked on:
 **Title**: [Project Title]
 - Description: [Brief description of the project]
 - Technologies used: [List of technologies]
-- [Link to project if available] 
+- [Link to project if available]
+
+[← Back to Home](/)
+[Learn more about me →](/about/) 

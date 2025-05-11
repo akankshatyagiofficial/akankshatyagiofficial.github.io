@@ -15,4 +15,7 @@ I'm Akanksha, a passionate data analyst. This website showcases my work and expe
 
 ## Latest Updates
 
-Stay tuned for new projects and updates! 
+Stay tuned for new projects and updates!
+
+[View my projects →](/projects/)
+[Learn more about me →](/about/) 
