@@ -16,6 +16,7 @@
           <li><a href="#home" class="active">Home</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#about">About</a></li>
+          <div class="nav-dot"></div>
         </ul>
       </nav>
       <div class="social-icons">
@@ -90,5 +91,41 @@
       </div>
     </section>
   </main>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const navLinks = document.querySelectorAll('.main-nav a');
+    const navDot = document.querySelector('.nav-dot');
+    function moveDotToActive() {
+      const active = document.querySelector('.main-nav a.active');
+      const nav = document.querySelector('.main-nav');
+      if (active && nav && navDot) {
+        const navRect = nav.getBoundingClientRect();
+        const activeRect = active.getBoundingClientRect();
+        const left = activeRect.left - navRect.left + (activeRect.width / 2) - 4;
+        navDot.style.left = left + "px";
+      }
+    }
+    navLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        navLinks.forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+        moveDotToActive();
+      });
+    });
+    window.addEventListener('scroll', function() {
+      let fromTop = window.scrollY + 150;
+      navLinks.forEach(link => {
+        let section = document.querySelector(link.getAttribute('href'));
+        if (section && section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+          navLinks.forEach(l => l.classList.remove('active'));
+          link.classList.add('active');
+          moveDotToActive();
+        }
+      });
+    });
+    moveDotToActive();
+    window.addEventListener('resize', moveDotToActive);
+  });
+  </script>
 </body>
 </html> 
