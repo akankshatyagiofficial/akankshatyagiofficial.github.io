@@ -3,8 +3,8 @@ title: Akanksha's homepage
 subtitle: by HTML5 UP
 email: akankshatyagiofficial@gmail.com
 description: Data-driven analyst with experience in market research, data analysis, and project management. Proven track record of improving engagement, optimizing processes, and leading teams to deliver impactful results.
-baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
-url: # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://akankshatyagiofficial.github.io" # the base hostname & protocol for your site
 author:
 # street_address: 1234 Somewhere Road
 city: San Francisco Bay Area
